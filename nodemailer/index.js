@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 const {htmlContent} = require("./page.js");
 
-const emailHTML = htmlContent('walid bouricha', 'johndoe@example.com', 'securepassword123');
+const emailHTML = htmlContent('walid lamine', 'bourichalamine1@gmail.com', 'password');
 
 // Configuration du transporteur
 const transporter = nodemailer.createTransport({
@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
 // Options de l'email
 const mailOptions = {
   from: "onepiece28102000@gmail.com", // L'expéditeur
-  to: "onepiece28102000@gmail.com", // Destinataire(s)
+  to: "bourichalamine1@gmail.com", // Destinataire(s)
   subject: "Sujet du mail",
   text: "Contenu du mail en texte brut",
   html:emailHTML,
